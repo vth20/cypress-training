@@ -1,8 +1,8 @@
-describe('Sign In', () => {
+describe('Sign In', () => { // test suite.
 	const host = Cypress.env('HOST')
 	const username = Cypress.env('USERNAME')
 	const password = Cypress.env('PASSWORD')
-  it('allows a user to sign in with valid credentials', () => {
+  it('allows a user to sign in with valid credentials', () => { // testcase
     cy.visit(`${host}/PageDangNhap.aspx`)
     cy.wait(3000)
     // Ignore exception error
